@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Emily\\OneDrive\\Área de Trabalho\\C#\\Gerenciamento de Hospedaem\\Hotel\\Hotel.csproj",
+      "projectUniqueName": "C:\\Users\\Emily\\OneDrive\\Área de Trabalho\\C#\\Gerenciamento de Hospedagem\\Hotel\\Hotel.csproj",
       "projectName": "Hotel",
-      "projectPath": "C:\\Users\\Emily\\OneDrive\\Área de Trabalho\\C#\\Gerenciamento de Hospedaem\\Hotel\\Hotel.csproj",
+      "projectPath": "C:\\Users\\Emily\\OneDrive\\Área de Trabalho\\C#\\Gerenciamento de Hospedagem\\Hotel\\Hotel.csproj",
       "packagesPath": "C:\\Users\\Emily\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Emily\\OneDrive\\Área de Trabalho\\C#\\Gerenciamento de Hospedaem\\Hotel\\obj\\",
+      "outputPath": "C:\\Users\\Emily\\OneDrive\\Área de Trabalho\\C#\\Gerenciamento de Hospedagem\\Hotel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Emily\\AppData\\Roaming\\NuGet\\NuGet.Config"

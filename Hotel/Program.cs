@@ -24,16 +24,52 @@ while (!sair) {
             Console.Write("Digite o tipo de suíte: ");
             string tipoSuite = Console.ReadLine();
 
-            Console.Write("Digite a capacidade da suíte: ");
-            int capacidade = int.Parse(Console.ReadLine());
+            int capacidade;
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Digite a capacidade da suíte: ");
+                    capacidade = int.Parse(Console.ReadLine());
+                    break; // Sai do loop se a conversão foi bem-sucedida
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("\nPor favor, insira um número inteiro válido para a capacidade.");
+                }
+            }
 
-            Console.Write("Digite o valor da diária: ");
-            decimal valorDiaria = decimal.Parse(Console.ReadLine());
+            decimal valorDiaria;
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Digite o valor da diária: ");
+                    valorDiaria = decimal.Parse(Console.ReadLine());
+                    break; // Sai do loop se a conversão foi bem-sucedida
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("\nPor favor, insira um valor numérico válido para o valor da diária.");
+                }
+            }
 
             Suite suite = new Suite(tipoSuite, capacidade, valorDiaria);
 
-            Console.Write("Digite a quantidade de dias reservados: ");
-            int diasReservados = int.Parse(Console.ReadLine());
+            int diasReservados;
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Digite a quantidade de dias reservados: ");
+                    diasReservados = int.Parse(Console.ReadLine());
+                    break; // Sai do loop se a conversão foi bem-sucedida
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("\nPor favor, insira um número inteiro válido para a quantidade de dias reservados.");
+                }
+            }
 
             reserva = new Reserva(diasReservados);
             reserva.CadastrarSuite(suite);
@@ -73,7 +109,7 @@ while (!sair) {
         case "4":
             if (reserva != null && reserva.Suite != null) {
                 decimal valorTotal = reserva.CalcularValorDiaria();
-                Console.WriteLine($"Valor total da diária: {valorTotal:C}");
+                Console.WriteLine($"Valor total da reserva: {valorTotal:C}");
             } else {
                 Console.WriteLine("Primeiro, cadastre uma suíte para calcular o valor da diária.");
             }
